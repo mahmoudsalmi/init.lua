@@ -10,6 +10,7 @@ return {
           topdelete = { text = '‾' },
           changedelete = { text = '~' },
         },
+        sign_priority = 6,
       })
     end,
   },
