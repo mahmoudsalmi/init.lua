@@ -41,13 +41,14 @@ return {
 
     require("fidget").setup()
     require("mason").setup({
-      PATH = "skip",
+      PATH = "append",
     })
     require("mason-lspconfig").setup({
       ensure_installed = {
         'tsserver',
         'rust_analyzer',
-        'lua_ls'
+        'lua_ls',
+        'eslint'
       },
       handlers = {
         function(server_name)
